@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lint>
+    <issue id="IconDuplicates">
+        <ignore path="src/main/res/drawable/quiz_logo.png" />
+        <ignore path="src/main/res/mipmap-xxxhdpi/quiz_icon.png" />
+        <ignore path="src/main/res/mipmap-xxxhdpi/quiz_icon.png" />
+    </issue>
+    <issue id="IconLauncherShape">
+        <ignore path="src/main/res/mipmap-hdpi/quiz_icon.png" />
+        <ignore path="src/main/res/mipmap-mdpi/quiz_icon.png" />
+        <ignore path="src/main/res/mipmap-mdpi/quiz_icon.png" />
+        <ignore path="src/main/res/mipmap-mdpi/quiz_icon.png" />
+        <ignore path="src/main/res/mipmap-mdpi/quiz_icon.png" />
+        <ignore path="src/main/res/mipmap-mdpi/quiz_icon.png" />
+        <ignore path="src/main/res/mipmap-mdpi/quiz_icon.png" />
+        <ignore path="src/main/res/mipmap-xhdpi/quiz_icon.png" />
+        <ignore path="src/main/res/mipmap-xxhdpi/quiz_icon.png" />
+        <ignore path="src/main/res/mipmap-xxxhdpi/quiz_icon.png" />
+    </issue>
+    <issue id="IconLocation">
+        <ignore path="src/main/res/drawable/quiz_logo.png" />
+        <ignore path="src/main/res/drawable/quiz_logo.png" />
+        <ignore path="src/main/res/drawable/quiz_logo.png" />
+    </issue>
+</lint>

@@ -1,0 +1,44 @@
+<resources>
+    <string name="app_name">Quizzie</string>
+    <string name="start_quiz">Start Quiz</string>
+    <string name="note">Note: \n Total 8 Questions. \n       4 Points per question</string>
+
+    <string name="questionOne">Q. 1 \n\nWhat of the following is the default value of a local variable?</string>
+    <string name="q1_option1">null</string>
+    <string name="q1_option2">0</string>
+    <string name="q1_option3">Not assigned</string>
+    <string name="q1_option4">Depends upon the type of variable</string>
+
+    <string name="questionTwo">Q. 2 \n\nWhat is the default value of String variable?</string>
+    <string name="q2_option1">null</string>
+    <string name="q2_option2">long</string>
+    <string name="q2_option3">int</string>
+    <string name="q2_option4">not defined</string>
+
+    <string name="questionThree">Q. 3 \n\nWhich of the following is a marker interface?</string>
+    <string name="q3_option1">Comparable</string>
+    <string name="q3_option2">Serializable</string>
+    <string name="q3_option3">Cloneable</string>
+    <string name="q3_option4">None of the above</string>
+
+    <string name="questionFour">Q. 4 \n\nA package is a collection of...</string>
+    <string name="q4_option1">Classes</string>
+    <string name="q4_option2">Interfaces</string>
+    <string name="q4_option3">Editing tools</string>
+    <string name="q4_option4">Objects</string>
+
+    <string name="questionFive">Q. 5 \n\nWhich of the modifier cant be used for constructors?</string>
+    <string name="q5_option1">public</string>
+    <string name="q5_option2">private</string>
+    <string name="q5_option3">static</string>
+    <string name="q5_option4">protected</string>
+
+    <string name="questionSix">Q. 6 \n\nHow many primitive data types are there in Java?</string>
+    <string name="questionSeven">Q. 7 \n\nIn Java arrays are</string>
+    <string name="questionEight">Q. 8 \n\nWhich method cannot be overridden?</string>
+    <string name="your_answer">Your Answer</string>
+    <string name="submit">Submit</string>
+    <string name="logo">Logo</string>
+
+
+</resources>
