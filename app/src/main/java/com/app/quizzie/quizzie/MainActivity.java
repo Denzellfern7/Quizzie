@@ -159,7 +159,7 @@ public class MainActivity extends AppCompatActivity {
             Intent i = new Intent(MainActivity.this, IntroActivity.class);
             startActivity(i);
             finish();
-            // Maria
+            // Maria I Love You
         }
     }
 }
