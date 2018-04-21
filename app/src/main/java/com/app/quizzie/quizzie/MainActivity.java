@@ -120,9 +120,9 @@ public class MainActivity extends AppCompatActivity {
             }
 
             if (Score == Math.round(Score)) {
-                Toast.makeText(this, "Your Score is: " + (int) Score + ". Correct Answers: " + correct_ans_count + "/8", Toast.LENGTH_SHORT).show();
+                Toast.makeText(this, "Your Score is: " + (int) Score + ". " + correct_ans_count + "/8", Toast.LENGTH_SHORT).show();
             } else {
-                Toast.makeText(this, "Your Score is: " + Score + ". Correct Answers: " + correct_ans_count + "/8", Toast.LENGTH_SHORT).show();
+                Toast.makeText(this, "Your Score is: " + Score + ". " + correct_ans_count + "/8", Toast.LENGTH_SHORT).show();
             }
             isSubmitted = true;
         } else {
