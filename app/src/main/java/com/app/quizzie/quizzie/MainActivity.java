@@ -96,7 +96,7 @@ public class MainActivity extends AppCompatActivity {
                 correct_ans_count += 1;
             }
 
-//            Checks Answers 66
+//            Checks Answers 6
             String ans_six_input_string = ans_six_input.getText().toString();
             if (!ans_six_input_string.equals("")) {
                 if (Integer.parseInt(ans_six_input_string) == ans1to6[8]) {
@@ -159,6 +159,7 @@ public class MainActivity extends AppCompatActivity {
             Intent i = new Intent(MainActivity.this, IntroActivity.class);
             startActivity(i);
             finish();
+            // Maria
         }
     }
 }
