@@ -24,7 +24,7 @@ public class MainActivity extends AppCompatActivity {
     private EditText ans_six_input;
     private EditText ans_seven_input;
     private EditText ans_eight_input;
-    private final int[] ans1to6 = {R.id.question1_option3, R.id.question2_option1, R.id.question3_option2, R.id.question4_option1, R.id.question4_option2, R.id.question5_option1, R.id.question5_option2, R.id.question5_option4, 8};
+    private final int[] ans1to6 = {R.id.question_1_option_3_rb, R.id.question_2_option_1_rb, R.id.question_3_option_2_rb, R.id.question_4_option_1_cb, R.id.question_4_option_2_cb, R.id.question_5_option_1_cb, R.id.question_5_option_2_cb, R.id.question_5_option_4_cb, 8};
     private final String[] ans7to8 = {"Objects", "objects", "final"};
     private Button submit;
 
@@ -32,10 +32,10 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.mainactivity);
-        ans_six_input = findViewById(R.id.input_ans_six);
-        ans_seven_input = findViewById(R.id.input_ans_seven);
-        ans_eight_input = findViewById(R.id.input_ans_eight);
-        submit = findViewById(R.id.submit_quiz);
+        ans_six_input = findViewById(R.id.input_ans_six_et);
+        ans_seven_input = findViewById(R.id.input_ans_seven_et);
+        ans_eight_input = findViewById(R.id.input_ans_eight_et);
+        submit = findViewById(R.id.submit_quiz_btn);
 
         submit.setOnClickListener(new View.OnClickListener() {
             @Override

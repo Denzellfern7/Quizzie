@@ -31,22 +31,25 @@
                 android:layout_height="wrap_content">
 
                 <RadioButton
+                    android:id="@+id/question_1_option_1_rb"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="@string/q1_option1" />
 
                 <RadioButton
+                    android:id="@+id/question_1_option_2_rb"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="@string/q1_option2" />
 
                 <RadioButton
-                    android:id="@+id/question1_option3"
+                    android:id="@+id/question_1_option_3_rb"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="@string/q1_option3" />
 
                 <RadioButton
+                    android:id="@+id/question_1_option_4_rb"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="@string/q1_option4" />
@@ -76,22 +79,25 @@
                 android:layout_height="wrap_content">
 
                 <RadioButton
-                    android:id="@+id/question2_option1"
+                    android:id="@+id/question_2_option_1_rb"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="@string/q2_option1" />
 
                 <RadioButton
+                    android:id="@+id/question_2_option_2_rb"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="@string/q2_option2" />
 
                 <RadioButton
+                    android:id="@+id/question_2_option_3_rb"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="@string/q2_option3" />
 
                 <RadioButton
+                    android:id="@+id/question_2_option_4_rb"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="@string/q2_option4" />
@@ -121,22 +127,25 @@
                 android:layout_height="wrap_content">
 
                 <RadioButton
+                    android:id="@+id/question_3_option_1_rb"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="@string/q3_option1" />
 
                 <RadioButton
-                    android:id="@+id/question3_option2"
+                    android:id="@+id/question_3_option_2_rb"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="@string/q3_option2" />
 
                 <RadioButton
+                    android:id="@+id/question_3_option_3_rb"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="@string/q3_option3" />
 
                 <RadioButton
+                    android:id="@+id/question_3_option_4_rb"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="@string/q3_option4" />
@@ -167,23 +176,25 @@
                 android:orientation="vertical">
 
                 <CheckBox
-                    android:id="@+id/question4_option1"
+                    android:id="@+id/question_4_option_1_cb"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="@string/q4_option1" />
 
                 <CheckBox
-                    android:id="@+id/question4_option2"
+                    android:id="@+id/question_4_option_2_cb"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="@string/q4_option2" />
 
                 <CheckBox
+                    android:id="@+id/question_4_option_3_cb"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="@string/q4_option3" />
 
                 <CheckBox
+                    android:id="@+id/question_4_option_4_cb"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="@string/q4_option4" />
@@ -214,24 +225,25 @@
                 android:orientation="vertical">
 
                 <CheckBox
-                    android:id="@+id/question5_option1"
+                    android:id="@+id/question_5_option_1_cb"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="@string/q5_option1" />
 
                 <CheckBox
-                    android:id="@+id/question5_option2"
+                    android:id="@+id/question_5_option_2_cb"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="@string/q5_option2" />
 
                 <CheckBox
+                    android:id="@+id/question_5_option_3_cb"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="@string/q5_option3" />
 
                 <CheckBox
-                    android:id="@+id/question5_option4"
+                    android:id="@+id/question_5_option_4_cb"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="@string/q5_option4" />
@@ -257,7 +269,7 @@
                 android:textColor="@android:color/black" />
 
             <EditText
-                android:id="@+id/input_ans_six"
+                android:id="@+id/input_ans_six_et"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="@string/your_answer"
@@ -282,7 +294,7 @@
                 android:textColor="@android:color/black" />
 
             <EditText
-                android:id="@+id/input_ans_seven"
+                android:id="@+id/input_ans_seven_et"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="@string/your_answer"
@@ -308,7 +320,7 @@
                 android:textColor="@android:color/black" />
 
             <EditText
-                android:id="@+id/input_ans_eight"
+                android:id="@+id/input_ans_eight_et"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="@string/your_answer"
@@ -317,7 +329,7 @@
         </LinearLayout>
 
         <Button
-            android:id="@+id/submit_quiz"
+            android:id="@+id/submit_quiz_btn"
             android:layout_width="250dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
