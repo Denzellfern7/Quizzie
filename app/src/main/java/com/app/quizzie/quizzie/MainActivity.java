@@ -20,7 +20,6 @@ public class MainActivity extends AppCompatActivity {
     private boolean isSubmitted = false;
     private int correct_ans_count = 0;
     private final String[] ans6to8 = {"8", "Objects", "objects", "final"};
-    private RadioButton radioButton;
     private EditText ans_six_input;
     private EditText ans_seven_input;
     private EditText ans_eight_input;
@@ -123,7 +122,7 @@ public class MainActivity extends AppCompatActivity {
                 correct_ans_count += 1;
             }
 
-                Toast.makeText(this, "Your Score is: " + Score + ". Correct Answers: " + correct_ans_count + "/8", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "Your Score is: " + Score + ". Correct Answers: " + correct_ans_count + "/8", Toast.LENGTH_SHORT).show();
 
             isSubmitted = true;
         } else {
