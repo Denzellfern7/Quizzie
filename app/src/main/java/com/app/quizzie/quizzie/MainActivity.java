@@ -12,21 +12,42 @@ import android.widget.EditText;
 import android.widget.RadioButton;
 import android.widget.Toast;
 
+import butterknife.BindView;
+import butterknife.ButterKnife;
+
 @SuppressWarnings("FieldCanBeLocal")
 public class MainActivity extends AppCompatActivity {
     private boolean isSubmitted = false;
     private int correct_ans_count = 0;
-    private double Score = 0;
+    private final String[] ans6to8 = {"8", "Objects", "objects", "final"};
     private RadioButton radioButton;
-    private CheckBox chk1;
-    private CheckBox chk2;
-    private CheckBox chk4;
     private EditText ans_six_input;
     private EditText ans_seven_input;
     private EditText ans_eight_input;
-    private final int[] ans1to6 = {R.id.question_1_option_3_rb, R.id.question_2_option_1_rb, R.id.question_3_option_2_rb, R.id.question_4_option_1_cb, R.id.question_4_option_2_cb, R.id.question_5_option_1_cb, R.id.question_5_option_2_cb, R.id.question_5_option_4_cb, 8};
-    private final String[] ans7to8 = {"Objects", "objects", "final"};
+    @BindView(R.id.question_1_option_3_rb)
+    RadioButton question_1_option_3;
     private Button submit;
+    @BindView(R.id.question_2_option_1_rb)
+    RadioButton question_2_option_1;
+    @BindView(R.id.question_3_option_2_rb)
+    RadioButton question_3_option_2;
+    @BindView(R.id.question_4_option_1_cb)
+    CheckBox question_4_option_1;
+    @BindView(R.id.question_4_option_2_cb)
+    CheckBox question_4_option_2;
+    @BindView(R.id.question_4_option_3_cb)
+    CheckBox question_4_option_3;
+    @BindView(R.id.question_4_option_4_cb)
+    CheckBox question_4_option_4;
+    @BindView(R.id.question_5_option_1_cb)
+    CheckBox question_5_option_1;
+    @BindView(R.id.question_5_option_2_cb)
+    CheckBox question_5_option_2;
+    @BindView(R.id.question_5_option_3_cb)
+    CheckBox question_5_option_3;
+    @BindView(R.id.question_5_option_4_cb)
+    CheckBox question_5_option_4;
+    private int Score = 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -36,70 +57,53 @@ public class MainActivity extends AppCompatActivity {
         ans_seven_input = findViewById(R.id.input_ans_seven_et);
         ans_eight_input = findViewById(R.id.input_ans_eight_et);
         submit = findViewById(R.id.submit_quiz_btn);
+        ButterKnife.bind(this);
 
         submit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                checkAnswers(ans1to6[0], ans1to6[1], ans1to6[2], ans1to6[3], ans1to6[4], ans1to6[5], ans1to6[6], ans1to6[7]);
+                checkAnswers();
             }
         });
     }
 
-    private void checkAnswers(int ans1, int ans2, int ans3, int ans4_1, int ans4_2, int ans5_1, int ans5_2, int ans5_3) {
+    private void checkAnswers() {
         if (!isSubmitted) {
 
 //            Checks Answer 1
-            radioButton = findViewById(ans1);
-            if (radioButton.isChecked()) {
+            if (question_1_option_3.isChecked()) {
                 Score += 4;
                 correct_ans_count += 1;
-                radioButton.setChecked(false);
             }
 
 //            Checks Answer 2
-            radioButton = findViewById(ans2);
-            if (radioButton.isChecked()) {
+            if (question_2_option_1.isChecked()) {
                 Score += 4;
                 correct_ans_count += 1;
             }
 
 //            Checks Answer 3
-            radioButton = findViewById(ans3);
-            if (radioButton.isChecked()) {
+            if (question_3_option_2.isChecked()) {
                 Score += 4;
                 correct_ans_count += 1;
             }
 
 //            Checks Answer 4
-            chk1 = findViewById(ans4_1);
-            chk2 = findViewById(ans4_2);
-            if (chk1.isChecked() && chk2.isChecked()) {
+            if (question_4_option_1.isChecked() && question_4_option_2.isChecked() && !question_4_option_3.isChecked() && !question_4_option_4.isChecked()) {
                 Score += 4;
-                correct_ans_count += 1;
-            } else if (chk1.isChecked() || chk2.isChecked()) {
-                Score += 2;
                 correct_ans_count += 1;
             }
 
 //            Checks Answer 5
-            chk1 = findViewById(ans5_1);
-            chk2 = findViewById(ans5_2);
-            chk4 = findViewById(ans5_3);
-            if (chk1.isChecked() && chk2.isChecked() && chk4.isChecked()) {
+            if (question_5_option_1.isChecked() && question_5_option_2.isChecked() && !question_5_option_3.isChecked() && question_5_option_4.isChecked()) {
                 Score += 4;
-                correct_ans_count += 1;
-            } else if (chk1.isChecked() && chk2.isChecked() || chk1.isChecked() && chk4.isChecked() || chk2.isChecked() && chk4.isChecked()) {
-                Score += 2.6;
-                correct_ans_count += 1;
-            } else if (chk1.isChecked() || chk2.isChecked() || chk4.isChecked()) {
-                Score += 1.3;
                 correct_ans_count += 1;
             }
 
 //            Checks Answers 6
             String ans_six_input_string = ans_six_input.getText().toString();
             if (!ans_six_input_string.equals("")) {
-                if (Integer.parseInt(ans_six_input_string) == ans1to6[8]) {
+                if (ans_six_input_string.equals(ans6to8[0])) {
                     Score += 4;
                     correct_ans_count += 1;
                 }
@@ -107,23 +111,20 @@ public class MainActivity extends AppCompatActivity {
 
 //            Checks Answer 7
             String answer_seven_input_string = ans_seven_input.getText().toString();
-            if (answer_seven_input_string.equals(ans7to8[0]) || answer_seven_input_string.equals(ans7to8[1])) {
+            if (answer_seven_input_string.equals(ans6to8[1]) || answer_seven_input_string.equals(ans6to8[2])) {
                 Score += 4;
                 correct_ans_count += 1;
             }
 
 //            Checks Answer 8
             String answer_eight_input_string = ans_eight_input.getText().toString();
-            if (answer_eight_input_string.equals(ans7to8[2])) {
+            if (answer_eight_input_string.equals(ans6to8[3])) {
                 Score += 4;
                 correct_ans_count += 1;
             }
 
-            if (Score == Math.round(Score)) {
-                Toast.makeText(this, "Your Score is: " + (int) Score + ". Correct Answers: " + correct_ans_count + "/8", Toast.LENGTH_SHORT).show();
-            } else {
                 Toast.makeText(this, "Your Score is: " + Score + ". Correct Answers: " + correct_ans_count + "/8", Toast.LENGTH_SHORT).show();
-            }
+
             isSubmitted = true;
         } else {
             Toast.makeText(this, "You have already submitted the answer", Toast.LENGTH_SHORT).show();

@@ -31,13 +31,11 @@
                 android:layout_height="wrap_content">
 
                 <RadioButton
-                    android:id="@+id/question_1_option_1_rb"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="@string/q1_option1" />
 
                 <RadioButton
-                    android:id="@+id/question_1_option_2_rb"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="@string/q1_option2" />
@@ -49,7 +47,6 @@
                     android:text="@string/q1_option3" />
 
                 <RadioButton
-                    android:id="@+id/question_1_option_4_rb"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="@string/q1_option4" />
@@ -85,19 +82,16 @@
                     android:text="@string/q2_option1" />
 
                 <RadioButton
-                    android:id="@+id/question_2_option_2_rb"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="@string/q2_option2" />
 
                 <RadioButton
-                    android:id="@+id/question_2_option_3_rb"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="@string/q2_option3" />
 
                 <RadioButton
-                    android:id="@+id/question_2_option_4_rb"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="@string/q2_option4" />
@@ -127,7 +121,6 @@
                 android:layout_height="wrap_content">
 
                 <RadioButton
-                    android:id="@+id/question_3_option_1_rb"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="@string/q3_option1" />
@@ -139,13 +132,11 @@
                     android:text="@string/q3_option2" />
 
                 <RadioButton
-                    android:id="@+id/question_3_option_3_rb"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="@string/q3_option3" />
 
                 <RadioButton
-                    android:id="@+id/question_3_option_4_rb"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="@string/q3_option4" />
